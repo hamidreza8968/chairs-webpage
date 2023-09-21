@@ -26,13 +26,14 @@ body {
 }
 
 .container {
-  width: 960px;
+  max-width: 1200px;
   margin: 0 auto;
+  padding: 0 32px;
 }
 
 header,
 section {
-  margin-bottom: 48px;
+  margin-bottom: 128px;
 }
 
 h2 {
@@ -41,11 +42,6 @@ h2 {
   letter-spacing: -0.5px;
 }
 
-.grid-3-cols {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  column-gap: 80px;
-}
 
 .btn:link,
 .btn:visited{
@@ -76,9 +72,8 @@ h2 {
 /* ------------------------ */
 
 /* HEADER */
-header {
+.header-grid {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
   column-gap: 80px;
   margin-top: 48px;
 }
@@ -98,14 +93,20 @@ h1 {
   margin-bottom: 24px;
   font-size: 18px;
   line-height: 1.7;
-
 }
 
-img {
+.header-grid img {
   width: 100%;
+  grid-column: 2;
+  grid-row: 1/3;
 }
 
 /* FEATURES */
+.features{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  column-gap: 80px;
+}
 .features-icon {
   stroke: #087f5b;
   width: 32px;
@@ -130,9 +131,20 @@ img {
   padding: 24px;
 }
 
+.testimonial-grid{
+  display: grid;
+  column-gap: 80px;
+}
+
+.testimonial-grid img{
+  width: 100%;
+  grid-column: 2;
+  grid-row: 1/3;
+}
+
 .testimonial-box {
-  grid-column: 2 / -1;
   align-self: center;
+  /*grid-row: 1;*/
 }
 
 .testimonial-box h2 {
@@ -156,7 +168,11 @@ h3 {
   margin-bottom: 24px;
   font-size: 20px;
 }
-
+.chairs{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  column-gap: 80px;
+}
 .chair-details {
   list-style: none;
   margin-bottom: 24px;
@@ -173,6 +189,10 @@ h3 {
   margin-bottom: 0;
 }
 
+.chairs img{
+  width: 100%;
+}
+
 .chair-icon {
   stroke: #087f5b;
   width: 24px;
@@ -181,7 +201,8 @@ h3 {
 
 .chair-price {
   display: flex;
-  justify-content: space-between;
+  gap: 8px;
+  align-items: center;
   font-size: 20px;
 }
 
