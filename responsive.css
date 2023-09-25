@@ -19,7 +19,7 @@
     .header-grid img{
         grid-row: 1;
     }
-    h1{
+    .title{
         font-size: 36px;
     }
     .header-text{
@@ -55,10 +55,16 @@
     .header-grid{
         grid-template-columns: 1fr;
         row-gap: 32px;
+        margin-top: 0;
     }
-    h1{
-        grid-column: 1;
-        grid-row: 1;
+    .title{
+        position: absolute;
+        font-size: 18px;
+        top: 44px;
+        font-weight: 500;
+        max-width: 70%;
+        letter-spacing: 1px;
+        line-height: 18px;
     }
     .header-grid img{
         grid-column: 1;

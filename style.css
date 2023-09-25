@@ -86,7 +86,7 @@ img{
 .main-nav-list{
   list-style: none;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
 }
 
@@ -173,7 +173,7 @@ img{
   align-self: center;
 }
 
-h1 {
+.title {
   margin-bottom: 32px;
   font-size: 44px;
   line-height: 1.1;
